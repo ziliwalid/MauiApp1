@@ -30,7 +30,8 @@
                         <SwipeView>
                             <SwipeView.RightItems>
                                 <SwipeItems>
-                                    <SwipeItemView>
+                                    <SwipeItemView Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:MainPageViewModel}}, Path=DeleteCommand}"
+                                                   CommandParameter="{Binding .}">
                                         <Frame BackgroundColor="red"
                                                CornerRadius="20"
                                                HeightRequest="80"
